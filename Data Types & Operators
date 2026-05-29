@@ -1,0 +1,77 @@
+// Exercise 1: Numbers
+
+// 1. Declare number variables
+let integerNumber = 10;
+let floatingNumber = 5.5;
+
+// 2. Arithmetic operations
+let addition = integerNumber + 5;
+let subtraction = integerNumber - 3;
+let multiplication = integerNumber * 2;
+let division = integerNumber / 2;
+let modulus = integerNumber % 3;
+let exponentiation = integerNumber ** 2;
+
+// 3. Print all variables
+console.log("Integer Number:", integerNumber);
+console.log("Floating Number:", floatingNumber);
+
+console.log("Addition:", addition);
+console.log("Subtraction:", subtraction);
+console.log("Multiplication:", multiplication);
+console.log("Division:", division);
+console.log("Modulus:", modulus);
+console.log("Exponentiation:", exponentiation);
+
+// Exercise 2: Boolean and Operators
+
+// 1. Comparison operators
+let num1 = 15;
+let num2 = 20;
+
+let greaterThan = num1 > num2;
+let lessThan = num1 < num2;
+let equalTo = num1 == num2;
+
+console.log("Is num1 greater than num2?", greaterThan);
+console.log("Is num1 less than num2?", lessThan);
+console.log("Is num1 equal to num2?", equalTo);
+
+
+// 2. Variables x and y
+let x = 8;
+let y = 12;
+
+// a-d Comparison checks
+console.log("Is x greater than y?", x > y);
+console.log("Is x less than or equal to y?", x <= y);
+console.log("Is x equal to y?", x == y);
+console.log("Is x not equal to y?", x != y);
+
+
+// 3. Logical operators
+let a = true;
+let b = false;
+
+console.log("a AND b:", a && b);
+console.log("a OR b:", a || b);
+console.log("NOT a:", !a);
+
+
+// 4. Assignment operators
+let p = 10;
+
+p += 5;
+console.log("After += :", p);
+
+p -= 3;
+console.log("After -= :", p);
+
+p *= 2;
+console.log("After *= :", p);
+
+p /= 4;
+console.log("After /= :", p);
+
+p %= 3;
+console.log("After %= :", p);
