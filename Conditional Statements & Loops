@@ -1,0 +1,215 @@
+// Exercise 1: Temperature Check
+
+// Using if else statements
+let temperature = 18;
+
+if (temperature < 0) {
+    console.log("It's freezing!");
+} 
+else if (temperature >= 0 && temperature <= 15) {
+    console.log("It's cold.");
+} 
+else if (temperature >= 16 && temperature <= 25) {
+    console.log("It's mild.");
+} 
+else {
+    console.log("It's warm.");
+}
+
+
+// Using switch statements
+switch (true) {
+    case (temperature < 0):
+        console.log("It's freezing!");
+        break;
+
+    case (temperature >= 0 && temperature <= 15):
+        console.log("It's cold.");
+        break;
+
+    case (temperature >= 16 && temperature <= 25):
+        console.log("It's mild.");
+        break;
+
+    default:
+        console.log("It's warm.");
+}
+
+
+// Exercise 2: Divisibility Check
+
+// Using if else statements
+let number = 12;
+
+if (number % 2 === 0 && number % 3 === 0) {
+    console.log("Divisible by both.");
+} 
+else if (number % 2 === 0) {
+    console.log("Divisible by 2.");
+} 
+else if (number % 3 === 0) {
+    console.log("Divisible by 3.");
+} 
+else {
+    console.log("Not divisible by 2 or 3.");
+}
+
+
+// Using switch statements
+switch (true) {
+    case (number % 2 === 0 && number % 3 === 0):
+        console.log("Divisible by both.");
+        break;
+
+    case (number % 2 === 0):
+        console.log("Divisible by 2.");
+        break;
+
+    case (number % 3 === 0):
+        console.log("Divisible by 3.");
+        break;
+
+    default:
+        console.log("Not divisible by 2 or 3.");
+}
+
+
+// Exercise 3: For Loops
+
+// 1. Printing numbers from 1 to 10
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+
+
+// 2. Printing even numbers between 1 and 20
+for (let i = 1; i <= 20; i++) {
+    if (i % 2 === 0) {
+        console.log(i);
+    }
+}
+
+
+// 3. Sum of numbers from 1 to 100
+let sum = 0;
+
+for (let i = 1; i <= 100; i++) {
+    sum += i;
+}
+
+console.log("Sum:", sum);
+
+
+// 4. Print array elements
+const numbers1 = [1, 2, 3, 4, 5];
+
+for (let i = 0; i < numbers1.length; i++) {
+    console.log(numbers1[i]);
+}
+
+
+// 5. Find the largest number
+const numbers2 = [3, 7, 2, 5, 10, 6];
+
+let largest = numbers2[0];
+
+for (let i = 1; i < numbers2.length; i++) {
+    if (numbers2[i] > largest) {
+        largest = numbers2[i];
+    }
+}
+
+console.log("Largest number:", largest);
+
+
+// Exercise 4: While Loops
+
+// 1. Print numbers from 1 to 10
+let count1 = 1;
+
+while (count1 <= 10) {
+    console.log(count1);
+    count1++;
+}
+
+
+// 2. Print even numbers between 1 and 20
+let count2 = 1;
+
+while (count2 <= 20) {
+    if (count2 % 2 === 0) {
+        console.log(count2);
+    }
+    count2++;
+}
+
+
+// 3. Sum of numbers from 1 to 100
+let total = 0;
+let num = 1;
+
+while (num <= 100) {
+    total += num;
+    num++;
+}
+
+console.log("Total Sum:", total);
+
+
+// 4. Print multiples of 5 less than 50
+let multiple = 1;
+
+while (multiple < 50) {
+    if (multiple % 5 === 0) {
+        console.log(multiple);
+    }
+    multiple++;
+}
+
+// Exercise 5: Do While Loops
+
+// 1. Print numbers from 1 to 10
+let i = 1;
+
+do {
+    console.log(i);
+    i++;
+} while (i <= 10);
+
+
+// 2. Sum of numbers from 1 to 100
+let sumNumbers = 0;
+let j = 1;
+
+do {
+    sumNumbers += j;
+    j++;
+} while (j <= 100);
+
+console.log("Sum:", sumNumbers);
+
+
+// 3. Prompt user until number greater than 10
+let userNumber;
+
+do {
+    userNumber = prompt("Enter a number greater than 10:");
+} while (userNumber <= 10);
+
+console.log("Valid number entered:", userNumber);
+
+
+// 4. Simple guessing game
+let secretNumber = 7;
+let guess;
+
+do {
+    guess = prompt("Guess a number between 1 and 10:");
+    
+    if (guess == secretNumber) {
+        console.log("Correct! You guessed the number.");
+    } else {
+        console.log("Wrong guess. Try again.");
+    }
+
+} while (guess != secretNumber);
